@@ -25,7 +25,7 @@ class Solution:
             node.next, up = ListNode(sum % 10), sum // 10
             l2, node = l2.next, node.next
 
-        if up > 0:  # 자리올림 수가 남았을 때
+        if up > 0:  # 자리올림 수가 남았을 때 출력
             node.next = ListNode(up)
 
         return head.next
