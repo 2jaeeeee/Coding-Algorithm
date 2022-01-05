@@ -5,7 +5,7 @@ class ListNode:
 
 
 class Solution:
-    #연결리스트 뒤집기
+    #연결 리스트 뒤집기
     def reverseList(self, head: ListNode) -> ListNode:
         node, prev = head, None
 
@@ -15,7 +15,7 @@ class Solution:
 
         return prev
 
-    #연결리스트 정수로 변환
+    #연결 리스트 정수로 변환
     def convertInt(self, head: ListNode) -> int:
         result, node = [], head
 
@@ -25,7 +25,7 @@ class Solution:
 
         return int(''.join(str(e) for e in result))
 
-    #연결리스트 덧셈
+    #연결 리스트 덧셈
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         val1 = self.convertInt(self.reverseList(l1))
         val2 = self.convertInt(self.reverseList(l2))
