@@ -22,7 +22,4 @@ class Solution:
         dfs(nums)
         return results
 
-nums = [1, 2, 3]
-sol = Solution()
-print(sol.permute(nums))
 
